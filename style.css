@@ -8,14 +8,19 @@
   --yellow-color: #fabe4c;
   --navy-color: #363958;
   --green-color: #a4bc46;
+  --font-logo: "Montserrat", sans-serif;
+  /* ... your colors ... */
   --font-heading: "Bebas Neue", sans-serif;
   --font-body: "Roboto", sans-serif;
-  --font-logo: "Montserrat", sans-serif;
-  --size-small: 16px;
-  --size-medium: 24px;
-  --size-large: 36px;
-  --size-xlarge: 48px;
-  --base-padding: 135px;
+  
+  /* Use rem for accessibility (1rem = 16px) */
+  --size-small: 1rem;
+  --size-medium: 1.5rem;
+  --size-large: 2.25rem;
+  --size-xlarge: 3rem;
+  
+  /* This makes padding scale from 20px on mobile to 135px on desktop */
+  --base-padding: clamp(1.25rem, 10vw, 8.4rem);
 }
 
 body {
@@ -35,6 +40,7 @@ body {
   background-repeat: repeat;
   z-index: 100;
 }
+
 
 .nav-hero {
   background-color: #fffbf0;
@@ -140,7 +146,7 @@ body {
   padding-right: 135px;
 }
 
-.women-jacket h1 {
+.women-jacket .title {
   margin-top: 49px;
   margin-bottom: 21px;
   font-family: var(--font-heading);
@@ -162,9 +168,7 @@ body {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
 }
 
 .jacket-img {
@@ -197,7 +201,6 @@ body {
 .footer {
   margin-top: 60px;
   display: flex;
-  justify-content: space-between;
   gap: 83px;
   padding: 100px 135px 175px 135px;
 }
@@ -211,7 +214,7 @@ body {
 .f-cards {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 36px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
