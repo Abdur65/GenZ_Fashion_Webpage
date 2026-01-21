@@ -38,20 +38,21 @@
 
 </head>
 
-<body class="font-body text-navy text-[16px] m-0 p-0">
+<body class="font-body text-navy text-[16px] m-0 p-0 box-border">
 
-    <div class="nav-hero bg-bg-hero">
-        <header class="relative">
-            <section class="dots absolute w-[150px] h-[150px] left-[35vw] -top-[100px] z-[100] bg-[radial-gradient(circle,#ffe2aa_2px,transparent_3px)] bg-[length:15px_15px] bg-repeat pointer-events-none"></section>
+    <div class="bg-bg-hero relative overflow-hidden">
+        <header>
+            <section class="dots absolute w-[150px] h-[150px] left-[35%] top-[-50px] lg:top-[-100px] z-0 bg-[radial-gradient(circle,#ffe2aa_2px,transparent_3px)]
+[background-size:15px_15px]"></section>
 
-            <nav class="nav-bar flex justify-between pl-[135px] pr-[137px] pt-[30px]">
-                <div class="logo flex items-center gap-[10px] pl-[35px]">
-                    <img class="logo-img w-[50px] h-[30px]" src="./images/logo.png" alt="logo" />
-                    <div class="logo-text text-[25.43px] font-bold text-navy font-logo">
-                        <p><span class="first-text text-green font-bold">GenZ</span> Fashion</p>
+            <nav class="relative z-10 flex flex-col lg:flex-row justify-between items-center pt-8 px-6 lg:px-[125px]">
+                <div class="logo flex items-center gap-[10px]">
+                    <img class="w-[50px] h-[30px]" src="./images/logo.png" alt="logo" />
+                    <div class="text-2xl font-bold">
+                        <p><span class="text-green">GenZ</span> Fashion</p>
                     </div>
                 </div>
-                <ul class="nav-list flex list-none gap-[57px] items-center font-bold">
+                <ul class="flex flex-wrap justify-center list-none gap-6 lg:gap-[55px] font-bold mt-2">
                     <li><a href="#" class="no-underline text-navy">Home</a></li>
                     <li><a href="#" class="no-underline text-navy">Product</a></li>
                     <li><a href="#" class="no-underline text-navy">About Us</a></li>
@@ -59,22 +60,25 @@
                 </ul>
             </nav>
 
-            <div class="hero flex justify-around items-center pt-[101px] pb-[129px]">
-                <div class="hero-content max-w-[357px]">
-                    <p class="hero-head font-heading text-[80px] uppercase leading-tight">
-                        <span class="yellow-text text-yellow">Be the GenZs</span> of winter
-                    </p>
-                    <p class="mt-4">
+            <div class="relative z-10 flex flex-col-reverse lg:flex-row justify-between items-center px-6 lg:px-[135px] py-16 lg:py-[100px] gap-10">
+                
+                <div class="text-center lg:text-left">
+                    <h1 class="font-heading text-6xl lg:text-[80px] uppercase leading-none mb-4">
+                        <span class="text-yellow">Be the GenZs</span>
+                        <br>of winter
+                    </h1>
+                    <p class="mb-6">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, officia.
                     </p>
-                    <button class="shop-btn flex items-center justify-center uppercase border-none rounded-[10px] gap-[10px] mt-[20px] w-[170px] h-[60px] text-[16px] text-white bg-gradient-to-b from-green-gradient-start to-green-gradient-end cursor-pointer">
-                        <img src="./images/shopping-cart.png" alt="" class="w-[24px] h-[24px]" />
+                    <button class="flex items-center justify-center gap-5 w-[170px] h-[60px] text-white uppercase rounded-[10px] bg-gradient-to-b from-[#A4BC46] to-[#85A019] border-none">
+                        <img class="w-6 h-6" src="./images/shopping-cart.png" alt="" />
                         <p>Buy Now</p>
                     </button>
                 </div>
-                <div class="hero-img">
-                    <div class="img-container">
-                        <img src="./images/model.png" alt="" class="w-[400px] h-[400px]" />
+
+                <div class="w-full max-w-[400px]">
+                    <div class="w-full h-auto">
+                        <img class="w-full h-auto object-cover" src="./images/model.png" alt="model" />
                     </div>
                 </div>
             </div>
